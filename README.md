@@ -26,7 +26,7 @@ This should begin the download(s) in a newly created `BBC_Sound_Effects` folder.
 
 Let me know if you have any problems and I'll guide you through it. I haven't let this do a full run through yet so if the script fails please let me know.
 
-#### Note: If you need to stop the script, use `ctrl+c`. To restart it, start back at step #3.
+#### Note: If you need to stop the script, use `ctrl+c`. To restart it, start back at step #3. If you restart it, don't be alarmed by the `"07076050.wav" already exists, moving on...` messages. This is just the script skipping over the files you've already downloaded.
 
 ### Misc
 If you're curious as to how this works checkout the `download.sh` file above, I commented it pretty well so you can follow along.
