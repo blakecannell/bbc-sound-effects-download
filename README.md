@@ -17,15 +17,19 @@ This is a bash script so you'll need to run it inside a Unix shell/terminal:
 2. Unzip the package to your desktop (or wherever you wish, remembering where you put it when I later reference your desktop), this should create a `bbc-sound-effects-download-master` folder with the contents of the package.
 3. Open the `Terminal` app.
 4. Change directory to the package:
-*macOS*: `cd ~/Desktop/bbc-sound-effects-download-master`
-*Windows 10*: I'm not sure about the folder structure of where the Linux shell is installed so.. Hit me up and I'll work through this part with you
-5. Run the script
-`sudo sh ./download.sh`
-*This will ask your for your password, this is the login to your macOS account. If you're on the Windows 10 Linux shell you would have created an account when you installed the shell, use that.*
+  - *macOS*: `cd ~/Desktop/bbc-sound-effects-download-master`
+  - *Windows 10*: I'm not sure about the folder structure of where the Linux shell is installed so.. Hit me up and I'll work through this part with you
+5. Run the following: `sudo sh ./download.sh`
+  - *This will ask your for your password, this is the login to your macOS account. If you're on the Windows 10 Linux shell you would have created an account when you installed the shell, use that.*
 
-This should begin the download(s). This might take a while.. Don't watch, it slows down your internet connection.
+This should begin the download(s). This might take a while.. Don't watch, it slows down your internet connection. 😏
 
 Let me know if you have any problems and I'll help you through it. I haven't let this do a full run through yet so if the script fails please let me know.
 
-### Why bash?
-Because most people are capable of running it without installing other language compilers/interpreters. Yes, it was painful and I'd have much rather written this in ruby or python.
+### Misc
+If you're curious as to how this works checkout the `download.sh` file above, I commented it pretty well so you can follow along.
+
+Why Bash? Because most people are capable of running it without installing other language compilers/interpreters. Yes it was painful and I'd have much rather written this in ruby.
+
+Enjoy x
+
