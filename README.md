@@ -43,7 +43,7 @@ If you're running an environment incapable of running this bash script or you do
 ### Misc
 If you're curious as to how this works checkout the `download.sh` file above, I commented it pretty well so you can follow along.
 
-Why Bash? Because most people are capable of running it without installing other language compilers/interpreters. Yes it was painful and experienced bash devs might screw their nose up at a few things, idgaf. I'd have much rather written this in ruby.
+Why Bash? Because most people are capable of running it without installing other language compilers/interpreters. Yes it was painful and I'd have rather written this with something more dev friendly. 😋
 
 Enjoy x
 
