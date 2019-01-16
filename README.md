@@ -7,7 +7,7 @@ This script will loop over the entire database and download every file one after
 ## Requirements
 This is a bash script so you'll need to run it inside a Unix shell/terminal:
 - macOS/OSX/Linux users, this is the `Terminal` app.
-- Windows 10 users, you can install a Linux shell reasonably easily: https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/
+- [Windows 10 users, you can install a Linux shell reasonably easily](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
 - Other Windows users, try googling `how to install bash on Windows *`.. hehe..
 
   Note: If you're not running a unix-like environment nor a Windows machine capable of running a Linux shell, see the "Legacy" section below.
