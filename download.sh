@@ -1,6 +1,6 @@
 #!/bin/bash
 input="./sound-effects.csv" # This holds reference to all the files we're about to download
-remote="http://bbcsfx.acropolis.org.uk/assets" # This is the folder where they all exist
+remote="http://bbcsfx.acropolis.org.uk/assets" # This is the server where they all exist
 downloadLoc="./BBC_Sound_Effects" # This is the folder we're going to put them in
 
 mkdir $downloadLoc # Create the download folder
