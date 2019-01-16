@@ -11,7 +11,7 @@ sed 's/","/"|"/g' $input | # Replace comma delimiter in the CSV file with '|' so
   do # For every line in the CSV, do the following
     file=$(echo $f1 | tr -d \") # Trim quotations from file name
     description=$(echo $f2 | tr -d \") # Trim quotations from description
-    trimmedDesc=$(echo $description | sed -e 's/ /_/g' | sed 's/,//g' | sed 's/\.//g' | tr -cd '[[:alnum:]]._-') # Trim & replace some problematic chars from Description names
+    trimmedDesc=$(echo $description | sed -e 's/ /_/g' | sed 's/[,.]//g' | tr -cd '[[:alnum:]]._-') # Trim & replace some problematic chars from Description names
     if [ -e "$downloadLoc/$trimmedDesc.wav" ] # Check if the file exists
       then # If so, don't do anything
         echo "$f1 already exists, moving on..."
