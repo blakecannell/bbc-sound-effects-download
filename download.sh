@@ -17,7 +17,7 @@ sed 's/","/"|"/g' $input | # Replace comma delimiter in the CSV file with '|' so
         echo "$f1 already exists, moving on..."
         echo "============================="
       else # Otherwise, download it
-        echo "Downloading $remote/$file > $downloadLoc/$description.wav"
+        echo "Downloading $remote/$file > $downloadLoc/$trimmedDesc.wav"
         curl "$remote/$file" -o "$downloadLoc/$trimmedDesc.wav" --fail # Download the file or fail silently (and move on to the next recursion)
         echo "============================="
     fi

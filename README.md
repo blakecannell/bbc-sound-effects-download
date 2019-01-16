@@ -22,9 +22,9 @@ This is a bash script so you'll need to run it inside a Unix shell/terminal:
 5. Run the following: `sudo sh ./download.sh`
   - *This will ask your for your password, this is the login to your macOS account. If you're on the Windows 10 Linux shell you would have created an account when you installed the shell, use that.*
 
-This should begin the download(s). This might take a while.. Don't watch, it slows down your internet connection. 😏
+This should begin the download(s) in a newly created `BBC_Sound_Effects` folder. This might take a while.. Don't watch, it slows down your internet connection. 😏
 
-Let me know if you have any problems and I'll help you through it. I haven't let this do a full run through yet so if the script fails please let me know.
+Let me know if you have any problems and I'll guide you through it. I haven't let this do a full run through yet so if the script fails please let me know.
 
 ### Misc
 If you're curious as to how this works checkout the `download.sh` file above, I commented it pretty well so you can follow along.
