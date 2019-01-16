@@ -35,7 +35,9 @@ If you need to stop the script, use `ctrl+c`. To restart it, start back at step 
 If you're running an environment incapable of running this bash script or you don't care about descriptive file names, you can run these following three `curl` scripts (one at a time) to essentially achieve the same goal. The only caveat is you're directly downloading the asset, so it won't be descriptively named. The reason there is three is due to gaps in the file name ranges of the assets.
 
 `curl "http://bbcsfx.acropolis.org.uk/assets/[07000001-07076051].wav" -o "#1.wav" —fail`
+
 `curl "http://bbcsfx.acropolis.org.uk/assets/[0009000-0010006].wav" -o "#1.wav" —fail`
+
 `curl "http://bbcsfx.acropolis.org.uk/assets/[00008000-00008125].wav" -o "#1.wav" —fail`
 
 ### Misc
