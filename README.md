@@ -32,7 +32,7 @@ Let me know if you have any problems and I'll guide you through it. I haven't le
 If you need to stop the script, use `ctrl+c`. To restart it, start back at step #3. If you restart, don't be alarmed by the `"07076050.wav" already exists, moving on...` messages. This is just the script skipping over the files you've already downloaded.
 
 ### Legacy
-If you're running an environment incapable of running this bash script or you don't care about descriptive file names, you can run these following three `curl` scripts (one at a time) to essentially achieve the same goal. The only caveat is you're directly downloading the asset, so it won't be descriptively named. The reason there is three is due to gaps in the file name ranges of the assets.
+If you're running an environment incapable of running this bash script or you don't care about descriptive file names, you can run these following three `curl` scripts (one at a time) to essentially achieve the same goal. The only caveat is you're directly downloading the asset, so it won't be descriptively named. The reason there is three is due to gaps in the file name ranges of the assets on the server they reside.
 
 `curl "http://bbcsfx.acropolis.org.uk/assets/[07000001-07076051].wav" -o "#1.wav" —fail`
 
