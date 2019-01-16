@@ -10,6 +10,8 @@ This is a bash script so you'll need to run it inside a Unix shell/terminal:
 - Windows 10 users, you can install a Linux shell reasonably easily: https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/
 - Other Windows users, try googling `how to install bash on Windows *`.. hehe..
 
+  Note: If you're not running a unix-like environment nor a Windows machine capable of running a Linux shell, see the "Legacy" section below.
+
 ## How To
 1. Download the package:
   - Above the top right of this readme is a green button `Clone or download`.
@@ -19,8 +21,6 @@ This is a bash script so you'll need to run it inside a Unix shell/terminal:
 4. Change directory to the package:
   - *macOS*: `cd ~/Desktop/bbc-sound-effects-download-master`
   - *Windows 10*: I'm not sure about the folder structure of where the Linux shell is installed so.. Hit me up and I'll work through this part with you (please update me with it's location if you run through this successfully so I can edit this readme).
-  
-  Note: If you're not running a unix-like environment nor a Windows machine capable of running a Linux shell, see the "Legacy" section below.
 5. Run the following: `sudo sh ./download.sh`
   - *This will ask your for your password, this is the login to your macOS account. If you're on the Windows 10 Linux shell you would have created an account when you installed the shell, use that.*
 
