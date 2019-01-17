@@ -15,9 +15,8 @@ sed 's/","/"|"/g' $input | # Replace comma delimiter in the CSV file with '|' so
     trimmedFolder=$(echo $folder | sed -e 's/ /_/g' | sed 's/[,.]//g' | tr -cd '[[:alnum:]]._-') # Trim & replace some problematic chars from Description names
     trimmedDesc=$(echo $description | sed -e 's/ /_/g' | sed 's/[,.]//g' | tr -cd '[[:alnum:]]._-') # Trim & replace some problematic chars from Description names
 
-    # Make Folder
-    if [ ! -d $downloadLoc/$trimmedFolder ]
-      then
+    if [ ! -d $downloadLoc/$trimmedFolder ] # If the folder doesn't exist
+      then # Make it
         cd $downloadLoc
         mkdir $trimmedFolder
         cd ..
@@ -25,7 +24,7 @@ sed 's/","/"|"/g' $input | # Replace comma delimiter in the CSV file with '|' so
 
     # Backwards compatibility (move already downloaded file in to appropriate folder)
     if [ -e "$downloadLoc/$trimmedDesc.wav" ] # Check if the file exists
-      then
+      then #If so, move it
         echo "$f1 already exists, moving in to appropriate folder..."
         echo "============================="
         mv "$downloadLoc/$trimmedDesc.wav" "$downloadLoc/$trimmedFolder"
@@ -36,15 +35,11 @@ sed 's/","/"|"/g' $input | # Replace comma delimiter in the CSV file with '|' so
         echo "$f1 already exists, moving on..."
         echo "============================="
       else # Otherwise, download it
-
-
-
-        # Change directory (in to BBC_Sound_Effects)
-        cd $downloadLoc
-
+        cd $downloadLoc # Change directory (in to BBC_Sound_Effects)
         echo "Downloading $remote/$file > $trimmedFolder/$trimmedDesc.wav"
         curl "$remote/$file" -o "$trimmedFolder/$trimmedDesc.wav" --fail # Download the file or fail silently (and move on to the next recursion)
         echo "============================="
+        cd ..
     fi
   done
 
