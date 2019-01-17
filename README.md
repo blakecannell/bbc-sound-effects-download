@@ -18,7 +18,7 @@ This is a bash script so you'll need to run it inside a Unix shell/terminal:
   - Choose the `Download Zip` option.
 2. Unzip the package to your desktop (or wherever you wish, remembering where you put it when I later reference your desktop), this should create a `bbc-sound-effects-download-master` folder with the contents of the package.
 3. Open the `Terminal` app.
-4. Change directory to the package:
+4. Change directory to the package (on your desktop):
   - *macOS*: `cd ~/Desktop/bbc-sound-effects-download-master`
   - *Windows 10*: I'm not sure about the folder structure of where the Linux shell is installed so.. Hit me up and I'll work through this part with you (please update me with it's location if you run through this successfully so I can edit this readme).
 5. Run the following: `sudo sh ./download.sh`
